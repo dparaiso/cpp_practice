@@ -1,24 +1,35 @@
 #include <iostream>
 using namespace std; 
 
+void counter(int n ){
+    for (int i = 0; i <= n; i++){
+        cout << i << endl; 
+    }
+    return; 
+}
+
 int main(){
-    // int i = 0; 
-    // for(int i = 0; i < 5; i += 2){
-    //     cout << i << endl; 
-    // }
 
-    // for(int i = 0; i < 10; i++){
-    //     if(i == 5){
-    //         continue;
-    //     }
+    /////////////// For loop //////////////////////////////////
+    for(int i = 0; i < 5; i += 2){
+        cout << i << endl; 
+    }
 
-    //     if(i == 7){
-    //         break; 
-    //     }
+    // Loop with continue and break
+    for(int i = 0; i < 10; i++){
+        if(i == 5){
+            continue;
+        }
 
-    //     cout << i << endl; 
-    // }
+        if(i == 7){
+            break; 
+        }
 
+        cout << i << endl; 
+    }
+
+
+    //////////////////// Do-While and While Loop //////////////////
     int i = 5; //declaration 
     do {
         cout << i << "\n";
@@ -29,18 +40,24 @@ int main(){
     bool flag = true; 
     while(flag){
         i++; 
-        if ( i == 7){
+        if ( i == 8){
             flag = false; 
         }
+        cout << i; 
     }
 
-    // cout << i << endl; 
+    cout << i << endl; 
+    //////////////////  Example Loop Questions //////////////////
+    // first questions
+    int a = 10; 
 
-    int n = 10; 
+    while(a > 0){
+        a/=2; 
+        cout << a*a << endl;
+    }
 
-    while(n > 0)
-        n/=2; 
-        cout << n*n << endl; 
-
-        cout << 1/2 << endl; 
+    //second question
+    // Write a function named counter that takes in an integer n and prints the numbers from 0 to n
+    int num = 10;   
+    counter(num);
 }
