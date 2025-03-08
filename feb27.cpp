@@ -61,3 +61,4 @@ int main(){
     int num = 10;   
     counter(num);
 }
+ 
