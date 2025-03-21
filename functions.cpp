@@ -48,7 +48,7 @@ void swap(int *x, int *y){
     *y = temp; 
 }
 
-double getTotal(double prices[], int size){
+double getTotal(int prices[], int size, ){
     double total = 0; 
     for(int i = 0; i < size; i++){
         total += prices[i]; 
