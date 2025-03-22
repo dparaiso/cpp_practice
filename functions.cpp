@@ -57,6 +57,16 @@ double getTotal(int prices[], int size, ){
 }
 
 int main(){
+
+
+    // int num = 0; 
+    int *numPointer; 
+
+    cout << endl; 
+    cout << numPointer; 
+    *numPointer = 9;
+    cout << endl; 
+    cout << numPointer; 
     // int res = add(2, 3); 
     // int res2 = getNumber(); 
     // cout << "\nThis is my result: " << res << endl; 
@@ -64,14 +74,14 @@ int main(){
     // cout << "\nThis is my result: " << getNumber() << endl; 
     // test(); 
 
-    printNTimes(5, "tim"); 
+    // printNTimes(5, "tim"); 
 
-    cout << doMath(3, 4);
-    cout << makePair(2,3).first;
+    // cout << doMath(3, 4);
+    // cout << makePair(2,3).first;
 
-    double prices[] = {49.99, 15.05, 75, 9.99}; 
-    int size = sizeof(prices)/sizeof(prices[0]);
-    double total = getTotal(prices, size); 
-    cout << "$" << total; 
+    // double prices[] = {49.99, 15.05, 75, 9.99}; 
+    // int size = sizeof(prices)/sizeof(prices[0]);
+    // double total = getTotal(prices, size); 
+    // cout << "$" << total; 
     return 0; 
 }
