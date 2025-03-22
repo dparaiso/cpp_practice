@@ -20,6 +20,17 @@ void swapBad(int x, int y ){
     x = y; 
     y = temp; 
 }
+// int i = 0 up to 3
+// arr[7-1- i]
+//  [0, 1, 2, 3, 4, 5, 6]
+
+void reverseOrder(int* arr, int size, bool flag){
+    for(int i = 0; i < size/2; i++){
+        int temp = arr[i]; 
+        arr[i] = arr[size-1-i]; 
+        arr[size-1-i] = temp; 
+    }
+}
 
 int main(){
     // swapping by pointer
